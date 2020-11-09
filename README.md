@@ -71,3 +71,6 @@ tar -xvf amdgpu-pro-20.40-1147286-ubuntu-20.04.tar
 cd amdgpu-pro-20.40-1147286-ubuntu-20.04/
 sudo ./amdgpu-install 
 ```
+
+## Setup rvm
+## Setup ruby
