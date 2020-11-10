@@ -78,6 +78,8 @@ sudo apt install libqt5xml5
 1. Download and install `Linux_Pentablet_V1.2.13.1`
 ```
 
+## Install Xournal++
+
 ## Mount google-drive locally
 `https://github.com/astrada/google-drive-ocamlfuse`
 
