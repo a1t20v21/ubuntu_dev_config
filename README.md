@@ -72,5 +72,14 @@ cd amdgpu-pro-20.40-1147286-ubuntu-20.04/
 sudo ./amdgpu-install 
 ```
 
+## Setup XP-Pen
+```
+sudo apt install libqt5xml5
+1. Download and install `Linux_Pentablet_V1.2.13.1`
+```
+
+## Mount google-drive locally
+`https://github.com/astrada/google-drive-ocamlfuse`
+
 ## Setup rvm
 ## Setup ruby
