@@ -80,6 +80,8 @@ sudo apt install libqt5xml5
 
 ## Install Xournal++
 
+## Setup dnsmasq and disable systemd-resolved
+`https://kifarunix.com/configure-local-dns-server-using-dnsmasq-on-ubuntu-20-04/`
 ## Mount google-drive locally
 `https://github.com/astrada/google-drive-ocamlfuse`
 
