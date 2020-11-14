@@ -82,8 +82,20 @@ sudo apt install libqt5xml5
 
 ## Setup dnsmasq and disable systemd-resolved
 `https://kifarunix.com/configure-local-dns-server-using-dnsmasq-on-ubuntu-20-04/`
+```
+sudo systemctl restart network-manager
+sudo netplan apply
+```
+
 ## Mount google-drive locally
 `https://github.com/astrada/google-drive-ocamlfuse`
 
 ## Setup rvm
 ## Setup ruby
+
+## Install Latex/TexStudio
+```
+sudo apt install texstudio
+sudo apt install texlive-latex-extra
+sudo apt install texlive-science
+```
