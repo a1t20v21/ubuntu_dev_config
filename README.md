@@ -16,6 +16,7 @@ sudo apt install build-essential
 ```
 sudo apt install vim git curl cmake -y
 sudo apt install python3-dev -y
+sudo apt install gnustep-gui-runtime -y
 ```
 
 ## Save git credentials
