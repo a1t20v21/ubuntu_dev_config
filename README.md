@@ -16,6 +16,7 @@ sudo apt install build-essential
 ```
 sudo apt install vim git curl cmake -y
 sudo apt install python3-dev -y
+sudo apt install python3-pip -y
 sudo apt install gnustep-gui-runtime -y
 ```
 
@@ -80,7 +81,11 @@ sudo apt install libqt5xml5
 ```
 
 ## Install Xournal++
-
+```
+sudo add-apt-repository ppa:apandada1/xournalpp-stable
+sudo apt update
+sudo apt install xournalpp
+```
 ## Setup dnsmasq and disable systemd-resolved
 `https://kifarunix.com/configure-local-dns-server-using-dnsmasq-on-ubuntu-20-04/`
 ```
@@ -96,7 +101,18 @@ sudo netplan apply
 
 ## Install Latex/TexStudio
 ```
-sudo apt install texstudio
-sudo apt install texlive-latex-extra
-sudo apt install texlive-science
+sudo apt install texstudio -y
+sudo apt install texlive-latex-extra -y
+sudo apt install texlive-science -y
+```
+
+## Setup golang
+```
+wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+```
+
+## Setup jq
+```
+sudo apt  install jq -y
 ```
