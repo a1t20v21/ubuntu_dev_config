@@ -18,6 +18,7 @@ sudo apt install vim git curl cmake -y
 sudo apt install python3-dev -y
 sudo apt install python3-pip -y
 sudo apt install gnustep-gui-runtime -y
+sudo apt install gedit-plugin-multi-edit -y
 ```
 
 ## Save git credentials
@@ -115,4 +116,64 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 ## Setup jq
 ```
 sudo apt  install jq -y
+```
+
+## Setup pyenv
+```
+sudo apt-get install -y make \
+	build-essential \
+	libssl-dev \
+	zlib1g-dev \
+	libbz2-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	wget \
+	curl \
+	llvm \
+	libncurses5-dev \
+	libncursesw5-dev \
+	xz-utils \
+	tk-dev \
+	libffi-dev \
+	liblzma-dev \
+	python-openssl
+curl https://pyenv.run | bash
+pyenv install -v 3.8.5
+```
+
+## Setup linuxbrew
+```
+git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+mkdir ~/.linuxbrew/bin
+ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+eval $(~/.linuxbrew/bin/brew shellenv)
+```
+
+## Install tfenv and setup terraform
+```
+brew install tfenv
+tfenv install 0.13.5
+```
+
+## PDF Management
+```
+sudo apt install texlive-pstricks
+# Remove password
+pdftops -upw <password> file.pdf file.ps
+ps2pdf file.ps file.pdf
+pdftops in.pdf out.ps
+# Set password
+ps2pdf -sUserPassword=XXXXX -sOwnerPassword=YYYYY out.ps out.pdf
+```
+
+## MySQL 5.6 client on Ubuntu 20.04
+
+1. download binary from https://downloads.mysql.com/archives/community/
+2. 
+```
+sudo add-apt-repository universe
+sudo apt-get install libncurses5 libncurses5:i386
+tar -xzvf mysql-5.6.40-linux-glibc2.12-x86_64.tar.gz 
+cd mysql-5.6.40-linux-glibc2.12-x86_64/bin
+./mysql -h hostname.rds.amazonaws.com -uadmin -p
 ```
