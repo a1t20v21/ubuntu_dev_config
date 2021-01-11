@@ -177,3 +177,11 @@ tar -xzvf mysql-5.6.40-linux-glibc2.12-x86_64.tar.gz
 cd mysql-5.6.40-linux-glibc2.12-x86_64/bin
 ./mysql -h hostname.rds.amazonaws.com -uadmin -p
 ```
+
+## Disable unused microphone devices
+```
+sudo apt install pavucontrol
+Launch pavucontrol
+Go to the "Configuration" tab
+Disable webcam's microphone by choosing "Off" from the dropdown menu.
+```
